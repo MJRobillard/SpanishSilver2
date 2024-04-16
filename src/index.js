@@ -28,9 +28,9 @@ import Landing from "views/examples/Landing.js";
 import Login from "views/examples/Login.js";
 import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
+console.log("WORKED HERE");
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-console.log("WORKED HERE");
 root.render(
   <BrowserRouter>
     <Routes>
