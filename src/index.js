@@ -30,7 +30,7 @@ import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
+console.log("WORKED HERE");
 root.render(
   <BrowserRouter>
     <Routes>
