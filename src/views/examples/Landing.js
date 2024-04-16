@@ -41,7 +41,6 @@ import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import CardsFooter from "components/Footers/CardsFooter.js";
 
 // index page sections
-import Download from "../IndexSections/Download.js";
 
 class Landing extends React.Component {
   state = {};
@@ -76,8 +75,7 @@ class Landing extends React.Component {
                   <Row>
                     <Col lg="6">
                       <h1 className="display-3 text-white">
-                        Spanish Silver in Atlantic History{" "}
-                        <span>A guide</span>
+                        The Origin and Creation of Spanish Silver{" "}
                       </h1>
                       <p className="text-white">
                       Built by Matthew Robillard
@@ -88,150 +86,26 @@ class Landing extends React.Component {
                 </div>
               </Container>
               {/* SVG separator */}
-              <div className="separator separator-bottom separator-skew">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  preserveAspectRatio="none"
-                  version="1.1"
-                  viewBox="0 0 2560 100"
-                  x="0"
-                  y="0"
-                >
-                  <polygon
-                    className="fill-white"
-                    points="2560 0 2560 100 0 100"
-                  />
-                </svg>
-              </div>
+
             </section>
             {/* 1st Hero Variation */}
           </div>
-          <section className="section section-lg pt-lg-0 mt--200">
-            <Container>
-              <Row className="justify-content-center">
-                <Col lg="12">
-                  <Row className="row-grid">
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <i className="ni ni-check-bold" />
-                          </div>
-                          <h6 className="text-primary text-uppercase">
-                            Economic Influence 
-                          </h6>
-                          <p className="description mt-3">
-                          Explorer the factors that made Spanish silver a dominent currency for centuries
-                          </p>
-                          <div>
-                            <Badge color="primary" pill className="mr-1">
-                              Hard to replicate
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              Massive supply 
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              Massive Demand
-                            </Badge>
-                          </div>
-                          <Button
-                            className="mt-4"
-                            color="primary"
-                            href="#pablo"
-                            onClick={(e) => e.preventDefault()}
-                          >
-                            Learn more
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
-                            <i className="ni ni-istanbul" />
-                          </div>
-                          <h6 className="text-success text-uppercase">
-                            Explorer the Gallery
-                          </h6>
-                          <p className="description mt-3">
-                          The Gallery includes maps, graphs, aswell as historical documents to help tell the story. 
-                          </p>
-                          <div>
-                            <Badge color="success" pill className="mr-1">
-                              Maps
-                            </Badge>
-                            <Badge color="success" pill className="mr-1">
-                              Graphs
-                            </Badge>
-                            <Badge color="success" pill className="mr-1">
-                              Primary Sources
-                            </Badge>
-                          </div>
-                          <Button
-                            className="mt-4"
-                            color="success"
-                            href="#pablo"
-                            onClick={(e) => e.preventDefault()}
-                          >
-                            Learn more
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                            <i className="ni ni-planet" />
-                          </div>
-                          <h6 className="text-warning text-uppercase">
-                            Legacy
-                          </h6>
-                          <p className="description mt-3">
-                          Explorer the Legacy of Spanish Silver and how it influences society today, aswell as the communities it impacted.
-                          </p>
-                          <div>
-                            <Badge color="warning" pill className="mr-1">
-                              The Americas
-                            </Badge>
-                            <Badge color="warning" pill className="mr-1">
-                              Europe 
-                            </Badge>
-
-                          </div>
-                          <Button
-                            className="mt-4"
-                            color="warning"
-                            href="#pablo"
-                            onClick={(e) => e.preventDefault()}
-                          >
-                            Learn more
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                  </Row>
-                </Col>
-              </Row>
-            </Container>
-          </section>
-          <section className="section section-lg">
+          <section className="section section-sm">
             <Container>
               <Row className="row-grid align-items-center">
                 <Col className="order-md-2" md="6">
                   <img
                     alt="..."
-                    className="img-fluid floating"
+                    className="img-fluid-default floating"
                     src={require("assets/img/theme/promo-1.png")}
                   />
                 </Col>
                 <Col className="order-md-1" md="6">
                   <div className="pr-md-5">
-                    <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
+                    <div className="icon icon-lg icon-shape icon-shape-default shadow rounded-circle mb-5">
                       <i className="ni ni-settings-gear-65" />
                     </div>
-                    <h3>Awesome features</h3>
+                    <h2 class = "text-default">Origin</h2>
                     <p>
                       The kit comes with three pre-built pages to help you get
                       started faster. You can change the text and images and
@@ -821,7 +695,6 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
-          <Download />
         </main>
         <CardsFooter />
       </>
