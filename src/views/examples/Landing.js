@@ -58,7 +58,9 @@ class Landing extends React.Component {
           <div className="position-relative">
             {/* shape Hero */}
             <section className="section section-lg section-shaped pb-250">
-              <div className="shape shape-style-1 shape-default">
+              <div className="shape shape-style-5 shape-default">
+              <img alt="..." src={require("assets/img/brand/argon-react-white.png")} />
+
                 <span />
                 <span />
                 <span />
@@ -74,38 +76,13 @@ class Landing extends React.Component {
                   <Row>
                     <Col lg="6">
                       <h1 className="display-3 text-white">
-                        A beautiful Design System{" "}
-                        <span>completed with examples</span>
+                        Spanish Silver in Atlantic History{" "}
+                        <span>A guide</span>
                       </h1>
-                      <p className="lead text-white">
-                        The design system comes with four pre-built pages to
-                        help you get started faster. You can change the text and
-                        images and you're good to go.
+                      <p className="text-white">
+                      Built by Matthew Robillard
                       </p>
-                      <div className="btn-wrapper">
-                        <Button
-                          className="btn-icon mb-3 mb-sm-0"
-                          color="info"
-                          href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alerts?ref=adsr-landing-page"
-                        >
-                          <span className="btn-inner--icon mr-1">
-                            <i className="fa fa-code" />
-                          </span>
-                          <span className="btn-inner--text">Components</span>
-                        </Button>
-                        <Button
-                          className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
-                          color="default"
-                          href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
-                        >
-                          <span className="btn-inner--icon mr-1">
-                            <i className="ni ni-cloud-download-95" />
-                          </span>
-                          <span className="btn-inner--text">
-                            Download React
-                          </span>
-                        </Button>
-                      </div>
+
                     </Col>
                   </Row>
                 </div>
@@ -141,22 +118,20 @@ class Landing extends React.Component {
                             <i className="ni ni-check-bold" />
                           </div>
                           <h6 className="text-primary text-uppercase">
-                            Download Argon
+                            Economic Influence 
                           </h6>
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                          Explorer the factors that made Spanish silver a dominent currency for centuries
                           </p>
                           <div>
                             <Badge color="primary" pill className="mr-1">
-                              design
+                              Hard to replicate
                             </Badge>
                             <Badge color="primary" pill className="mr-1">
-                              system
+                              Massive supply 
                             </Badge>
                             <Badge color="primary" pill className="mr-1">
-                              creative
+                              Massive Demand
                             </Badge>
                           </div>
                           <Button
@@ -177,22 +152,20 @@ class Landing extends React.Component {
                             <i className="ni ni-istanbul" />
                           </div>
                           <h6 className="text-success text-uppercase">
-                            Build Something
+                            Explorer the Gallery
                           </h6>
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                          The Gallery includes maps, graphs, aswell as historical documents to help tell the story. 
                           </p>
                           <div>
                             <Badge color="success" pill className="mr-1">
-                              business
+                              Maps
                             </Badge>
                             <Badge color="success" pill className="mr-1">
-                              vision
+                              Graphs
                             </Badge>
                             <Badge color="success" pill className="mr-1">
-                              success
+                              Primary Sources
                             </Badge>
                           </div>
                           <Button
@@ -213,23 +186,19 @@ class Landing extends React.Component {
                             <i className="ni ni-planet" />
                           </div>
                           <h6 className="text-warning text-uppercase">
-                            Prepare Launch
+                            Legacy
                           </h6>
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                          Explorer the Legacy of Spanish Silver and how it influences society today, aswell as the communities it impacted.
                           </p>
                           <div>
                             <Badge color="warning" pill className="mr-1">
-                              marketing
+                              The Americas
                             </Badge>
                             <Badge color="warning" pill className="mr-1">
-                              product
+                              Europe 
                             </Badge>
-                            <Badge color="warning" pill className="mr-1">
-                              launch
-                            </Badge>
+
                           </div>
                           <Button
                             className="mt-4"
@@ -700,17 +669,7 @@ class Landing extends React.Component {
                         understand culture.
                       </p>
                     </Col>
-                    <Col className="ml-lg-auto" lg="3">
-                      <Button
-                        block
-                        className="btn-white"
-                        color="default"
-                        href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
-                        size="lg"
-                      >
-                        Download React
-                      </Button>
-                    </Col>
+
                   </Row>
                 </div>
               </Card>
