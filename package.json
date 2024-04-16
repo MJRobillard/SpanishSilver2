@@ -1,11 +1,12 @@
 {
-  "name": "argon-design-system-react",
+  "name": "spanish-silver-2-react",
   "version": "1.1.2",
   "description": "React version of Argon Design System by Creative Tim",
   "main": "index.js",
+  "homepage": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/argon-design-system-react.git"
+    "url": "git+https://github.com/mjrobillard/SpanishSilver2.git"
   },
   "keywords": [
     "react",
@@ -18,24 +19,23 @@
     "argon-design-react",
     "kit",
     "react-kit",
-    "argon-design-system",
-    "argon-design-system-react",
+    "SpanishSilver2",
+    "SpanishSilver2-react",
     "design-system-react"
   ],
-  "author": "Creative Tim",
+  "author": "Creative ",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/creativetimofficial/argon-design-system-react/issues"
+    "url": "git+https://github.com/mjrobillard/SpanishSilver2.git"
   },
-  "homepage": "https://demos.creative-tim.com/argon-design-system-react/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
-    "compile-sass": "sass src/assets/scss/argon-design-system-react.scss src/assets/css/argon-design-system-react.css",
-    "minify-sass": "sass src/assets/scss/argon-design-system-react.scss src/assets/css/argon-design-system-react.min.css --style compressed"
+    "compile-sass": "sass src/assets/scss/SpanishSilver2-react.scss src/assets/css/SpanishSilver2-react.css",
+    "minify-sass": "sass src/assets/scss/SpanishSilver2-react.scss src/assets/css/SpanishSilver2-react.min.css --style compressed"
   },
   "eslintConfig": {
     "extends": "react-app"
