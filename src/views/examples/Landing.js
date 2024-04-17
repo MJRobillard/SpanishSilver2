@@ -35,6 +35,8 @@ import {
   Row,
   Col,
 } from "reactstrap";
+import { OverlayTrigger, Tooltip } from 'react-bootstrap';
+
 
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
@@ -169,73 +171,99 @@ class Landing extends React.Component {
           </section>
           <section className="section bg-secondary">
             <Container>
-              <Row className="row-grid align-items-center">
-                <Col md="6">
-                  <Card className="bg-default shadow border-0">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 mb-4">
+                  <div class="card bg-white shadow border-0">
                     <CardImg
-                      alt="..."
-                      src={require("assets/img/theme/img-1-1200x1000.jpg")}
+                      alt="Pillar Type"
+                      src={require("assets/img/Origin/milledbust_small.jpg")}                    
                       top
                     />
-                    <blockquote className="card-blockquote">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="svg-bg"
-                        preserveAspectRatio="none"
-                        viewBox="0 0 583 95"
-                      >
-                        <polygon
-                          className="fill-default"
-                          points="0,52 583,95 0,95"
-                        />
-                        <polygon
-                          className="fill-default"
-                          opacity=".2"
-                          points="0,42 583,95 683,0 0,95"
-                        />
-                      </svg>
-                      <h4 className="display-3 font-weight-bold text-white">
-                        Design System
-                      </h4>
-                      <p className="lead text-italic text-white">
-                        The Arctic Ocean freezes every winter and much of the
-                        sea-ice then thaws every summer, and that process will
-                        continue whatever happens.
+                    <div class="card-body">
+                      <h5 class="text-default">Pillar Type</h5>
+                      <p>
+                        First Spanish colonial silver coin design.
+                        Struck at Mexico, Santo Domingo, and Lima mints (1536-1572).
+                        Features pillars on one side and a shield with lions and castles on the other.
                       </p>
-                    </blockquote>
-                  </Card>
-                </Col>
-                <Col md="6">
-                  <div className="pl-md-5">
-                    <div className="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">
-                      <i className="ni ni-settings" />
+                      <Tooltip>Example</Tooltip>
                     </div>
-                    <h3>Our customers</h3>
-                    <p className="lead">
-                      Don't let your uses guess by attaching tooltips and
-                      popoves to any element. Just make sure you enable them
-                      first via JavaScript.
-                    </p>
-                    <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
-                    </p>
-                    <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
-                    </p>
-                    <a
-                      className="font-weight-bold text-warning mt-5"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      A beautiful UI Kit for impactful websites
-                    </a>
                   </div>
-                </Col>
-              </Row>
+                </div>
+                <div class="col-lg-4 mb-4">
+                  <div class="card bg-white shadow border-0">
+                    <CardImg
+                      alt="Shield Type"
+                      src={require("assets/img/Origin/shield_small.jpg")}                    
+                      top
+                    />
+                    <div class="card-body">
+                      <h5 class="text-default">Shield Type</h5>
+                      <p>
+                        Second Spanish colonial silver coin design.
+                        Struck at various mints (Mexico, Santo Domingo, Lima, etc.) from 1572 to 1734.
+                        Features a crowned shield on one side and a cross with lions and castles on the other.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                  <div class="card bg-white shadow border-0">
+                    <CardImg
+                      alt="Pillars and Waves Type"
+                      src={require("assets/img/Origin/pillar_small.jpg")}                    
+
+                      top
+                    />
+                    <div class="card-body">
+                      <h5 class="text-default">Pillars and Waves Type</h5>
+                      <p>
+                        Third Spanish colonial silver coin design.
+                        Struck at Bogotá, Potosi, Cartagena, Lima mints (1651-1773).
+                        Features pillars with waves on one side and a cross with lions and castles on the other.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                  <div class="card bg-white shadow border-0">
+                    <CardImg
+                      alt="Milled Pillar Type"
+                      src={require("assets/img/Origin/milledpillar_small.jpg")}                    
+                      top
+                    />
+                    <div class="card-body">
+                      <h5 class="text-default">Milled Pillar Type</h5>
+                      <p>
+                        Fourth Spanish colonial silver coin design.
+                        Struck at Mexico, Lima, Bogotá, etc. (1732-1772).
+                        Machine struck with pillars and waves separated by globes on one side and a shield with lions, castles, and fleurs-de-lis on the other.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                  <div class="card bg-white shadow border-0">
+                    <CardImg
+                      alt="Milled Bust Type"
+                      src={require("assets/img/Origin/milledbust_small.jpg")}                    
+                      top
+                    />
+                    <div class="card-body">
+                      <h5 class="text-default">Milled Bust Type</h5>
+                      <p>
+                        Fifth and final Spanish colonial silver coin design.
+                        Struck at various mints (Mexico, Lima, Bogotá, etc.) from 1771 to 1825.
+                        Features the bust of the King on one side and pillars with a shield on the other.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
             </Container>
           </section>
           <section className="section pb-0 bg-gradient-warning">
