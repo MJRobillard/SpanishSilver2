@@ -35,7 +35,6 @@ import {
   Row,
   Col,
 } from "reactstrap";
-import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 import MapWithPointsOfInterest from "./map";
 
 // core components
@@ -208,7 +207,6 @@ class Landing extends React.Component {
                         Struck at Mexico, Santo Domingo, and Lima mints (1536-1572).
                         Features pillars on one side and a shield with lions and castles on the other.
                       </p>
-                      <Tooltip>Example</Tooltip>
                     </div>
                   </div>
                 </div>
