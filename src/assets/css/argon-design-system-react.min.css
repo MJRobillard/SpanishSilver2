@@ -7210,7 +7210,7 @@ button.bg-darker:focus {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 .shadow,
-.profile-page .card-profile .card-profile-image img {
+.Bibliography-page .card-Bibliography .card-Bibliography-image img {
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07) !important;
 }
 .shadow-lg {
@@ -14852,13 +14852,13 @@ a.btn-icon-only {
   box-shadow: none;
   border: none;
 }
-.profile-page .card-profile {
+.Bibliography-page .card-Bibliography {
   margin-top: -150px;
 }
-.profile-page .card-profile .card-profile-image {
+.Bibliography-page .card-Bibliography .card-Bibliography-image {
   position: relative;
 }
-.profile-page .card-profile .card-profile-image img {
+.Bibliography-page .card-Bibliography .card-Bibliography-image img {
   max-width: 180px;
   border-radius: 0.25rem;
   transform: translate(-50%, -30%);
@@ -14866,39 +14866,39 @@ a.btn-icon-only {
   left: 50%;
   transition: all 0.15s ease;
 }
-.profile-page .card-profile .card-profile-image img:hover {
+.Bibliography-page .card-Bibliography .card-Bibliography-image img:hover {
   transform: translate(-50%, -33%);
 }
-.profile-page .card-profile .card-profile-stats {
+.Bibliography-page .card-Bibliography .card-Bibliography-stats {
   padding: 1rem 0;
 }
-.profile-page .card-profile .card-profile-stats > div {
+.Bibliography-page .card-Bibliography .card-Bibliography-stats > div {
   text-align: center;
   margin-right: 1rem;
   padding: 0.875rem;
 }
-.profile-page .card-profile .card-profile-stats > div:last-child {
+.Bibliography-page .card-Bibliography .card-Bibliography-stats > div:last-child {
   margin-right: 0;
 }
-.profile-page .card-profile .card-profile-stats > div .heading {
+.Bibliography-page .card-Bibliography .card-Bibliography-stats > div .heading {
   font-size: 1.1rem;
   font-weight: bold;
   display: block;
 }
-.profile-page .card-profile .card-profile-stats > div .description {
+.Bibliography-page .card-Bibliography .card-Bibliography-stats > div .description {
   font-size: 0.875rem;
   color: #adb5bd;
 }
-.profile-page .card-profile .card-profile-actions {
+.Bibliography-page .card-Bibliography .card-Bibliography-actions {
   padding: 0.875rem;
 }
 @media (max-width: 575.98px) {
-  .profile-page .card-profile .card-profile-actions {
+  .Bibliography-page .card-Bibliography .card-Bibliography-actions {
     margin-top: 110px;
   }
 }
 @media (min-width: 576px) and (max-width: 991.98px) {
-  .profile-page .card-profile .card-profile-stats {
+  .Bibliography-page .card-Bibliography .card-Bibliography-stats {
     margin-top: 30px;
   }
 }
@@ -16918,13 +16918,13 @@ textarea[resize="horizontal"] {
     height: 553px;
   }
 }
-.section-profile-cover {
+.section-Bibliography-cover {
   height: 580px;
   background-size: cover;
   background-position: center center;
 }
 @media (max-width: 991.98px) {
-  .section-profile-cover {
+  .section-Bibliography-cover {
     height: 400px;
   }
 }

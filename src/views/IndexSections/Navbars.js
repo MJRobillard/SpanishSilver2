@@ -95,7 +95,7 @@ class Navbars extends React.Component {
                     >
                       <i className="ni ni-notification-70" />
                       <span className="nav-link-inner--text d-lg-none">
-                        Profile
+                        Bibliography
                       </span>
                     </NavLink>
                   </NavItem>
@@ -171,7 +171,7 @@ class Navbars extends React.Component {
                   </NavItem>
                   <NavItem>
                     <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
-                      Profile
+                      Bibliography
                     </NavLink>
                   </NavItem>
                   <UncontrolledDropdown nav inNavbar>

@@ -487,15 +487,15 @@
     }
 }
 
-// Profile cover
-.section-profile-cover {
+// Bibliography cover
+.section-Bibliography-cover {
     height: 580px;
     background-size: cover;
     background-position: center center;
 }
 
 @include media-breakpoint-down(md) {
-    .section-profile-cover {
+    .section-Bibliography-cover {
         height: 400px;
     }
 }

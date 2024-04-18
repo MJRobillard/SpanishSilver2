@@ -271,12 +271,12 @@ class Modals extends React.Component {
                       <div className="custom-control custom-control-alternative custom-checkbox">
                         <input
                           className="custom-control-input"
-                          id=" customCheckLogin"
+                          id=" customCheckEcon"
                           type="checkbox"
                         />
                         <label
                           className="custom-control-label"
-                          htmlFor=" customCheckLogin"
+                          htmlFor=" customCheckEcon"
                         >
                           <span className="text-muted">Remember me</span>
                         </label>

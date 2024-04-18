@@ -9,11 +9,11 @@
   }
 }
 
-.profile-page {
-    .card-profile {
+.Bibliography-page {
+    .card-Bibliography {
         margin-top: -150px;
 
-        .card-profile-image {
+        .card-Bibliography-image {
             position: relative;
             //min-height: 130px;
 
@@ -32,7 +32,7 @@
             }
         }
 
-        .card-profile-stats {
+        .card-Bibliography-stats {
             padding: 1rem 0;
 
             > div {
@@ -56,18 +56,18 @@
             }
         }
 
-        .card-profile-actions {
+        .card-Bibliography-actions {
             padding: .875rem;
         }
 
         @include media-breakpoint-down(xs) {
-            .card-profile-actions {
+            .card-Bibliography-actions {
                 margin-top: 110px;
             }
         }
 
         @include media-breakpoint-between(sm, md) {
-            .card-profile-stats {
+            .card-Bibliography-stats {
                 margin-top: 30px;
             }
         }

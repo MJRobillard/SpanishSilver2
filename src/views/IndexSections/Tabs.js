@@ -87,7 +87,7 @@ class TabsSection extends React.Component {
                     role="tab"
                   >
                     <i className="ni ni-bell-55 mr-2" />
-                    Profile
+                    Bibliography
                   </NavLink>
                 </NavItem>
                 <NavItem>
@@ -181,7 +181,7 @@ class TabsSection extends React.Component {
                     href="#pablo"
                     role="tab"
                   >
-                    Profile
+                    Bibliography
                   </NavLink>
                 </NavItem>
                 <NavItem>

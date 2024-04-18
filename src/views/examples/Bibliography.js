@@ -50,7 +50,7 @@ const workers_dictionary = {
   "Pongos": "Indian supervisors who direct various specialized workers. The term's origin is linked to native implements (possibly derived from Quechua: punku meaning 'door') and connoted a supervisor by the time of these operations.",
   "Beneficiador (Refiner)": "Role responsible for blending crushed ore with mercury and other reagents in the amalgamation process. This role was usually held by a Spaniard or mestizo."
 };
-class Profile extends React.Component {
+class Bibliography extends React.Component {
   state = {};
   componentDidMount() {
     document.documentElement.scrollTop = 0;
@@ -208,4 +208,4 @@ class Profile extends React.Component {
   }
 }
 
-export default Profile;
+export default Bibliography;

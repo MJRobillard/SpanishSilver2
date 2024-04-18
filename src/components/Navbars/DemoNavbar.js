@@ -49,10 +49,10 @@ class DemoNavbar extends React.Component {
               <Link className="nav-link text-white" to="/landing-page">
                 Origin
               </Link>
-              <Link className="nav-link text-white" to="/profile-page">
+              <Link className="nav-link text-white" to="/Bibliography-page">
                 Economics
               </Link>
-              <Link className="nav-link text-white" to="/login-page">
+              <Link className="nav-link text-white" to="/Econ-page">
                 Bibliography
               </Link>
               <a

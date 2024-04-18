@@ -4,7 +4,7 @@ import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import CardsFooter from "components/Footers/CardsFooter.js";
 import citations from "./citations";
 
-class Login extends React.Component {
+class Econ extends React.Component {
   state = {};
   componentDidMount() {
     document.documentElement.scrollTop = 0;
@@ -76,4 +76,4 @@ class Login extends React.Component {
   }
 }
 
-export default Login;
+export default Econ;

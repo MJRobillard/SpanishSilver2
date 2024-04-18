@@ -98,7 +98,7 @@ class Menus extends React.Component {
                             href="#pablo"
                             onClick={(e) => e.preventDefault()}
                           >
-                            Profile
+                            Bibliography
                           </NavLink>
                         </NavItem>
                         <UncontrolledDropdown nav inNavbar>
@@ -193,7 +193,7 @@ class Menus extends React.Component {
                           >
                             <i className="ni ni-notification-70" />
                             <span className="nav-link-inner--text d-lg-none">
-                              Profile
+                              Bibliography
                             </span>
                           </NavLink>
                         </NavItem>

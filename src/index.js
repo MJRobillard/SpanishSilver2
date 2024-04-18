@@ -25,8 +25,8 @@ import "assets/scss/argon-design-system-react.scss?v1.1.0";
 
 import Index from "views/Index.js";
 import Landing from "views/examples/Landing.js";
-import Login from "views/examples/Login.js";
-import Profile from "views/examples/Profile.js";
+import Econ from "views/examples/Econ.js";
+import Bibliography from "views/examples/Bibliography.js";
 import Register from "views/examples/Register.js";
 console.log("WORKED HERE");
 
@@ -36,8 +36,8 @@ root.render(
     <Routes>
       <Route path="/" exact element={<Index />} />
       <Route path="/landing-page" exact element={<Landing />} />
-      <Route path="/login-page" exact element={<Login />} />
-      <Route path="/profile-page" exact element={<Profile />} />
+      <Route path="/Econ-page" exact element={<Econ />} />
+      <Route path="/Bibliography-page" exact element={<Bibliography />} />
       <Route path="/register-page" exact element={<Register />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

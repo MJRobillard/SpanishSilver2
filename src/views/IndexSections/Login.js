@@ -37,7 +37,7 @@ import {
   Col,
 } from "reactstrap";
 
-class Login extends React.Component {
+class Econ extends React.Component {
   state = {};
   render() {
     return (
@@ -68,8 +68,8 @@ class Login extends React.Component {
                   Bootstrap 4 Design System.
                 </p>
                 <div className="btn-wrapper">
-                  <Button color="success" to="/login-page" tag={Link}>
-                    Login Page
+                  <Button color="success" to="/Econ-page" tag={Link}>
+                    Econ Page
                   </Button>
                   <Button
                     className="btn-white"
@@ -174,12 +174,12 @@ class Login extends React.Component {
                         <div className="custom-control custom-control-alternative custom-checkbox">
                           <input
                             className="custom-control-input"
-                            id="customCheckLogin2"
+                            id="customCheckEcon2"
                             type="checkbox"
                           />
                           <label
                             className="custom-control-label"
-                            htmlFor="customCheckLogin2"
+                            htmlFor="customCheckEcon2"
                           >
                             <span>Remember me</span>
                           </label>
@@ -219,4 +219,4 @@ class Login extends React.Component {
   }
 }
 
-export default Login;
+export default Econ;
