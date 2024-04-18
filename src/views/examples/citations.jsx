@@ -21,6 +21,7 @@ const citations =  [{
     "Historical Sources": {
       "Bakewell, P. J. (Peter John). Miners of the Red Mountain : Indian Labor in Potosí": "  Bakewell, P. J. (Peter John). Miners of the Red Mountain : Indian Labor in Potosí, 1545-1650 / Peter Bakewell. 1st ed. Albuquerque: University of New Mexico Press, 1984.",
       "From Silver to Cocaine: Latin American Commodity Chains and the Building of the World Economy, 1500–2000" : "  From Silver to Cocaine: Latin American Commodity Chains and the Building of the World Economy, 1500–2000. Durham, NC [u.a.]: Duke University Press, 2006.",
+      "A": "Walton, Timothy R. The Spanish Treasure Fleets. Pineapple Press, 2015.",
     }
     
   }];
