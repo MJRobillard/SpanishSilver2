@@ -67,8 +67,11 @@ class Landing extends React.Component {
             {/* shape Hero */}
             <section className="section section-lg section-shaped pb-250">
               <div className="shape shape-style-5 shape-default">
-              <img alt="..." src={require("assets/img/brand/argon-react-white.png")} />
-
+              <img
+                alt="..."
+                src={require("assets/img/Origin/ViewPotos-1671; Creation date_ 1671.jpg")}
+                style={{ maxWidth: '100%', height: 'auto', objectFit: 'contain' }}
+              />
                 <span />
                 <span />
                 <span />
@@ -83,7 +86,7 @@ class Landing extends React.Component {
                 <div className="col px-0">
                   <Row>
                     <Col lg="6">
-                      <h1 className="display-3 text-white">
+                      <h1 className="display-3 text-white bold">
                         The Origin and Creation of Spanish Silver{" "}
                       </h1>
                       <p className="text-white">

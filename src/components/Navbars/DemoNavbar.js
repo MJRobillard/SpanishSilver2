@@ -3,30 +3,57 @@ import { Link } from "react-router-dom";
 import { Navbar, Nav, Container } from "reactstrap";
 
 class DemoNavbar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      scrolled: false
+    };
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll() {
+    const scrollTop = window.pageYOffset;
+    if (scrollTop > 0 && !this.state.scrolled) {
+      this.setState({ scrolled: true });
+    } else if (scrollTop === 0 && this.state.scrolled) {
+      this.setState({ scrolled: false });
+    }
+  }
+
   render() {
+    const navStyle = {
+      backgroundColor: this.state.scrolled ? "rgba(0, 0, 0, 0.6)" : "transparent",
+      transition: "background-color 0.3s ease",
+      color: "white",
+    };
 
     return (
       <header className="header-global">
-        <Navbar className="navbar-main navbar-transparent navbar-light headroom" expand="lg">
+        <Navbar fixed="top" style={navStyle} className="navbar-main navbar-light headroom" expand="lg">
           <Container>
             <Link className="navbar-brand mr-lg-5" to="/">
-              <img alt="..." src={require("assets/img/brand/argon-react-white.png")} />
+              <img alt="..." src={require("assets/img/brand/Logo.jpg")} />
             </Link>
             <button className="navbar-toggler" id="navbar_global">
               <span className="navbar-toggler-icon" />
             </button>
-            <Nav className="ml-auto" navbar>
-              <Link className="nav-link" to="/landing-page">
+            <Nav className="ml-auto text-white" navbar>
+              <Link className="nav-link text-white" to="/landing-page">
                 Origin
               </Link>
-              <Link className="nav-link" to="/profile-page">
+              <Link className="nav-link text-white" to="/profile-page">
                 Economics
               </Link>
-              <Link className="nav-link" to="/login-page">
-                Gallery
-              </Link>
-              <Link className="nav-link" to="/register-page">
-                Legacy
+              <Link className="nav-link text-white" to="/login-page">
+                Bibliography
               </Link>
               <a
                 className="nav-link nav-link-icon"

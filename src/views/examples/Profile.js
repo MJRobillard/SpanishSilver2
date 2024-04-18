@@ -36,7 +36,7 @@ import {
   Col,
 } from "reactstrap";
 import MapWithPointsOfInterest from "./map";
-
+import citations from "./citations";
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import CardsFooter from "components/Footers/CardsFooter.js";
@@ -50,7 +50,7 @@ const workers_dictionary = {
   "Pongos": "Indian supervisors who direct various specialized workers. The term's origin is linked to native implements (possibly derived from Quechua: punku meaning 'door') and connoted a supervisor by the time of these operations.",
   "Beneficiador (Refiner)": "Role responsible for blending crushed ore with mercury and other reagents in the amalgamation process. This role was usually held by a Spaniard or mestizo."
 };
-class Landing extends React.Component {
+class Profile extends React.Component {
   state = {};
   componentDidMount() {
     document.documentElement.scrollTop = 0;
@@ -66,7 +66,11 @@ class Landing extends React.Component {
             {/* shape Hero */}
             <section className="section section-lg section-shaped pb-250">
               <div className="shape shape-style-5 shape-default">
-              <img alt="..." src={require("assets/img/brand/argon-react-white.png")} />
+                <img
+                  alt="..."
+                  src={require("assets/img/Origin/Th-AdmiralAndraDoria-1846 (c 1840)2.jpg")}
+                  style={{ maxWidth: '100%', height: 'auto', objectFit: 'contain' }}
+                />
 
                 <span />
                 <span />
@@ -157,135 +161,46 @@ class Landing extends React.Component {
               </Row>
             </Container>
             <Container>
-              <Row className="row-grid align-items-center">
-              <h3>Spanish Treasure Fleet</h3>
-                <p>
-                  According to Blakewell's book, "Miners of the Red Mountain," the Spanish had somewhat specialized worker roles. In Potosi, the forced labor system imposed by the Spanish colonial authorities was known as the "mita" system. Under this system, indigenous people were required to perform labor in the mines, often enduring harsh conditions and exploitation.
-                </p>
-             {Object.entries(workers_dictionary).map(([workerType, definition], index) => (
-                  <React.Fragment key={index}>
-                    <Col className={index % 2 === 0 ? "order-md-1" : "order-md-2"} md="6">
-                      <div className="pr-md-5">
-                        </div>
-                        <h4 className="text-default">{workerType}</h4>
-                        <p>{definition}</p>
-                    </Col>
-                  </React.Fragment>
-                ))}
+              <Row className="row-grid align-items-center py-lg-md">
+                <Col className="order-md-1" md="6">
+                  <div className="pr-md-5">
+                    <div className="icon icon-lg icon-shape icon-shape-default shadow rounded-circle mb-5">
+                      <i className="ni ni-settings-gear-65" />
+                    </div>
+                    <h2 className="text-default">Spanish Treasure Fleet</h2>
+                    <p>To promote economic trade, the Spanish Treasure Fleet operated as a significant maritime entity, especially for transporting Spanish Silver.</p>
+                    <p>Notebly, the Sevilla_XVI_cent as seen in the painting</p>
+
+                    <h3> Casa de Contratación</h3>
+                    <p>Established in 1503 by the Spanish Crown, was a government agency based in Seville, Spain. Its primary purpose was to oversee and regulate Spain's overseas exploration, trade, and colonization during the Age of Discovery.</p>
+                    <p>
+                      The circulation of metallic currency within Spanish America and Brazil was surprisingly limited, despite their status as major silver and gold producers. Historians have debated this scarcity, which can be attributed to several key factors:
+                    </p>
+                    <h3> </h3>
+                  </div>
+                </Col>
+                <Col className="order-md-2" md="6">
+                  <img
+                    alt="Spanish Silver"
+                    className="img-fluid-default floating"
+                    src={require("assets/img/Origin/Sevilla_XVI_cent.jpg")}
+                    style={{ maxWidth: '100%', height: 'auto' }}
+                  />
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+
+                  <img
+                    alt="Spanish Silver"
+                    className="img-fluid-default floating"
+                    src={require("assets/img/Origin/16th_century_Portuguese_Spanish_trade_routes.png")}
+                    style={{ maxWidth: '100%', height: 'auto' }}
+                  />
+                </Col>
               </Row>
             </Container>
           </section>
-          <Container>
-            <Row>
-              <Col>
-                <h3>Spanish Mints in America</h3>
-                <p>Blue indicates short term, red indicates long term</p>
-                <p>Hover over a point to get more information</p>
-                <p>Mint locatino informatino from Topik et al. Silver to Cocaine 20.</p>
-                <p> Data Source: Alejandro de Humboldt, Ensayo político sobre el reino de la Nueva España (Mexico City: UNAM, IggI; original edition, Paris I8II).</p>
-
-                <MapWithPointsOfInterest />
-                
-              </Col>
-            </Row>
-          </Container>
-          <section className="section bg-secondary">
-            <Container>
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-4 mb-4">
-                  <div class="card bg-white shadow border-0">
-                    <CardImg
-                      alt="Pillar Type"
-                      src={require("assets/img/Origin/milledbust_small.jpg")}                    
-                      top
-                    />
-                    <div class="card-body">
-                      <h5 class="text-default">Pillar Type</h5>
-                      <p>
-                        First Spanish colonial silver coin design.
-                        Struck at Mexico, Santo Domingo, and Lima mints (1536-1572).
-                        Features pillars on one side and a shield with lions and castles on the other.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                  <div class="card bg-white shadow border-0">
-                    <CardImg
-                      alt="Shield Type"
-                      src={require("assets/img/Origin/shield_small.jpg")}                    
-                      top
-                    />
-                    <div class="card-body">
-                      <h5 class="text-default">Shield Type</h5>
-                      <p>
-                        Second Spanish colonial silver coin design.
-                        Struck at various mints (Mexico, Santo Domingo, Lima, etc.) from 1572 to 1734.
-                        Features a crowned shield on one side and a cross with lions and castles on the other.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                  <div class="card bg-white shadow border-0">
-                    <CardImg
-                      alt="Pillars and Waves Type"
-                      src={require("assets/img/Origin/pillar_small.jpg")}                    
-
-                      top
-                    />
-                    <div class="card-body">
-                      <h5 class="text-default">Pillars and Waves Type</h5>
-                      <p>
-                        Third Spanish colonial silver coin design.
-                        Struck at Bogotá, Potosi, Cartagena, Lima mints (1651-1773).
-                        Features pillars with waves on one side and a cross with lions and castles on the other.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                  <div class="card bg-white shadow border-0">
-                    <CardImg
-                      alt="Milled Pillar Type"
-                      src={require("assets/img/Origin/milledpillar_small.jpg")}                    
-                      top
-                    />
-                    <div class="card-body">
-                      <h5 class="text-default">Milled Pillar Type</h5>
-                      <p>
-                        Fourth Spanish colonial silver coin design.
-                        Struck at Mexico, Lima, Bogotá, etc. (1732-1772).
-                        Machine struck with pillars and waves separated by globes on one side and a shield with lions, castles, and fleurs-de-lis on the other.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                  <div class="card bg-white shadow border-0">
-                    <CardImg
-                      alt="Milled Bust Type"
-                      src={require("assets/img/Origin/milledbust_small.jpg")}                    
-                      top
-                    />
-                    <div class="card-body">
-                      <h5 class="text-default">Milled Bust Type</h5>
-                      <p>
-                        Fifth and final Spanish colonial silver coin design.
-                        Struck at various mints (Mexico, Lima, Bogotá, etc.) from 1771 to 1825.
-                        Features the bust of the King on one side and pillars with a shield on the other.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            </Container>
-          </section>
-          
         </main>
         <CardsFooter />
       </>
@@ -293,4 +208,4 @@ class Landing extends React.Component {
   }
 }
 
-export default Landing;
+export default Profile;

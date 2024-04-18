@@ -110,7 +110,7 @@ class Index extends React.Component {
               <Row className="justify-content-center">
                 <Col lg="12">
                   <Row className="row-grid">
-                  <Col lg="3">
+                  <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-default rounded-square mb-4">
@@ -144,7 +144,7 @@ class Index extends React.Component {
                         </CardBody>
                       </Card>
                     </Col>
-                    <Col lg="3">
+                    <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
@@ -178,64 +178,29 @@ class Index extends React.Component {
                         </CardBody>
                       </Card>
                     </Col>
-                    <Col lg="3">
+                    <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
                             <i className="ni ni-istanbul" />
                           </div>
                           <h6 className="text-success text-uppercase">
-                            Explorer the Gallery
+                            Bibliography
                           </h6>
                           <p className="description mt-3">
-                          The Gallery includes maps, graphs, aswell as historical documents to help tell the story. 
+                          Works cited information 
                           </p>
                           <div>
                             <Badge color="success" pill className="mr-1">
-                              Maps
+                              Image sources
                             </Badge>
                             <Badge color="success" pill className="mr-1">
-                              Graphs
-                            </Badge>
-                            <Badge color="success" pill className="mr-1">
-                              Primary Sources
+                              Historical sources
                             </Badge>
                           </div>
                           <Button
                             className="mt-4"
                             color="success"
-                            href="#pablo"
-                            onClick={(e) => e.preventDefault()}
-                          >
-                            Learn more
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col lg="3">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                            <i className="ni ni-planet" />
-                          </div>
-                          <h6 className="text-warning text-uppercase">
-                            Legacy
-                          </h6>
-                          <p className="description mt-3">
-                          Explorer the Legacy of Spanish Silver and how it influences society today, aswell as the communities it impacted.
-                          </p>
-                          <div>
-                            <Badge color="warning" pill className="mr-1">
-                              The Americas
-                            </Badge>
-                            <Badge color="warning" pill className="mr-1">
-                              Europe 
-                            </Badge>
-
-                          </div>
-                          <Button
-                            className="mt-4"
-                            color="warning"
                             href="#pablo"
                             onClick={(e) => e.preventDefault()}
                           >
