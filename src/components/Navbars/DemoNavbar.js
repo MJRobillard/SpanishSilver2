@@ -1,50 +1,51 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Nav, Container } from "reactstrap";
+import { Navbar, Nav, Container, Collapse, NavbarToggler } from "reactstrap";
 
-class DemoNavbar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      scrolled: false
-    };
-    this.handleScroll = this.handleScroll.bind(this);
-  }
+const DemoNavbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
-
-  handleScroll() {
+  const handleScroll = () => {
     const scrollTop = window.pageYOffset;
-    if (scrollTop > 0 && !this.state.scrolled) {
-      this.setState({ scrolled: true });
-    } else if (scrollTop === 0 && this.state.scrolled) {
-      this.setState({ scrolled: false });
-    }
-  }
+    setScrolled(scrollTop > 0);
+  };
 
-  render() {
-    const navStyle = {
-      backgroundColor: this.state.scrolled ? "rgba(0, 0, 0, 0.6)" : "transparent",
-      transition: "background-color 0.3s ease",
-      color: "white",
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 768);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Check initial viewport size
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
     };
+  }, []);
 
-    return (
-      <header className="header-global">
-        <Navbar fixed="top" style={navStyle} className="navbar-main navbar-light headroom" expand="lg">
-          <Container>
-            <Link className="navbar-brand mr-lg-5" to="/">
-              <img alt="..." src={require("assets/img/brand/Logo.jpg")} />
-            </Link>
-            <button className="navbar-toggler" id="navbar_global">
-              <span className="navbar-toggler-icon" />
-            </button>
+  const navStyle = {
+    backgroundColor: scrolled ? "rgba(0, 0, 0, 0.6)" : "transparent",
+    transition: "background-color 0.3s ease",
+    color: "white",
+  };
+
+  return (
+    <header className="header-global">
+      <Navbar fixed="top" style={navStyle} className="navbar-main navbar-light headroom" expand="lg">
+        <Container>
+          <Link className="navbar-brand mr-lg-5" to="/">
+            <img alt="..." src={require("assets/img/brand/Logo.jpg")} />
+          </Link>
+          <NavbarToggler onClick={toggle} />
+          <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto text-white" navbar>
               <Link className="nav-link text-white" to="/landing-page">
                 Origin
@@ -74,11 +75,11 @@ class DemoNavbar extends React.Component {
                 <span className="nav-link-inner--text ml-2"></span>
               </a>
             </Nav>
-          </Container>
-        </Navbar>
-      </header>
-    );
-  }
-}
+          </Collapse>
+        </Container>
+      </Navbar>
+    </header>
+  );
+};
 
 export default DemoNavbar;
